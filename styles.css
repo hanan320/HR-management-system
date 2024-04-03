@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   
+    color: #fff;
+    padding: 10px;
+    background: #00188F; 
+    background-image: linear-gradient(to right,#1d2951, #829efa);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.line-4 hr {
+    height: 2px;
+    border: 0;
+    background: rgb(29,41,81);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    
+  background-color: none;
+  width: 500px;
+  border: none;
+  padding: 20px;
+  margin: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #00188F; 
+    background-image: linear-gradient(to right,#1d2951, #829efa);
+    color: white;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 30px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    
+  
+}
+
+footer ul li p {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    bottom: 5px;
+    right: 16px;
+    
+}
+
+#employee-info {
+    margin-top: 20px;
+}
+
+
