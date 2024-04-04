@@ -1,3 +1,5 @@
+"use strict";
+
 // Constructor function to generate an employee object
 function Employee(employeeID, fullName, department, level) {
     this.employeeID = employeeID;
