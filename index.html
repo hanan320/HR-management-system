@@ -27,7 +27,36 @@
     </div>
 
     <main>
-        <div id="employee-info" class="row"> </div>
+       <div > 
+        <form id="employeeForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="Administration">Administration</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Development">Development</option>
+                <option value="Finance">Finance</option>
+            </select><br>
+
+            <label for="level">Level:</label>
+            <select id="level" name="level">
+                <option value="Junior">Junior</option>
+                <option value="Mid-Senior">Mid-Senior</option>
+                <option value="Senior">Senior</option>
+            </select><br>
+
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl" name="imageUrl"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+       </div> 
+        <div id="employeeList" class="flex-container">
+           
+        </div>
+
     </main>
 
 
