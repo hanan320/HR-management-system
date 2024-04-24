@@ -9,59 +9,55 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HR-management-system</title>
-
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><i class="fa-solid fa-calculator"> </i> HR-management-system </li>
+                <li><i class="fa-solid fa-calculator"></i> HR-management-system </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="accounting.html">Accounting</a></li>
             </ul>
         </nav>
     </header>
-    <div class="line-4">
-        <hr>
-    </div>
+    <hr>
 
     <main>
-       <div > 
-        <form id="employeeForm">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required><br>
+        <div>
+            <form id="employeeForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br>
 
-            <label for="department">Department:</label>
-            <select id="department" name="department">
-                <option value="Administration">Administration</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Development">Development</option>
-                <option value="Finance">Finance</option>
-            </select><br>
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="Administration">Administration</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Development">Development</option>
+                    <option value="Finance">Finance</option>
+                </select><br>
 
-            <label for="level">Level:</label>
-            <select id="level" name="level">
-                <option value="Junior">Junior</option>
-                <option value="Mid-Senior">Mid-Senior</option>
-                <option value="Senior">Senior</option>
-            </select><br>
+                <label for="level">Level:</label>
+                <select id="level" name="level">
+                    <option value="Junior">Junior</option>
+                    <option value="Mid-Senior">Mid-Senior</option>
+                    <option value="Senior">Senior</option>
+                </select><br>
 
-            <label for="imageUrl">Image URL:</label>
-            <input type="text" id="imageUrl" name="imageUrl"><br>
+                <label for="imageUrl">Image URL:</label>
+                <input type="text" id="imageUrl" name="imageUrl"><br>
 
-            <input type="submit" value="Submit">
-        </form>
-       </div> 
-        <div id="employeeList" class="flex-container">
-           
+                <div>
+                    <input type="submit" value="Submit">
+                    <input id="clearButton" type="reset" value="Clear">
+                </div>
+            </form>
         </div>
-
+        <div id="employeeList" class="flex-container">
+        </div>
     </main>
 
-
     <footer class="footer">
-
         <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
@@ -70,9 +66,6 @@
                 <p>&copy; 2024 Hanan Khaled</p>
             </li>
         </ul>
-
-
-
     </footer>
 
     <script src="app.js"></script>
