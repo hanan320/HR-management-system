@@ -8,7 +8,7 @@ body {
 header {
     color: #fff;
     padding: 10px;
-    background: #074173; 
+    background: #074173;
     background-image: linear-gradient(to right, #074173, #1679AB);
 }
 
@@ -16,7 +16,7 @@ header h1 {
     margin: 0;
 }
 
-.line-4 hr {
+hr {
     height: 2px;
     border: 0;
     background: rgb(29, 41, 81);
@@ -39,8 +39,6 @@ nav ul li a {
 
 main {
     padding: 20px;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 /* Employee card styles */
@@ -51,9 +49,7 @@ main {
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* display: flex;
-    flex-direction: column; */
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     height: 20%;
 }
 
@@ -74,13 +70,24 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px #C5FF95;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     height: 50%;
 }
 
 form label {
-    display: block; 
+    display: block;
     margin-bottom: 10px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    width: 45%;
+    padding: 10px;
+    background-color: #5DEBD7;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 form input[type="text"],
@@ -92,26 +99,15 @@ form select {
     border-radius: 5px;
 }
 
-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #5DEBD7;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .footer {
-    clear: both; /* Clear both left and right floats */
+    clear: both;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #00188F; 
+    background: #00188F;
     background-image: linear-gradient(to right, #074173, #1679AB);
     color: white;
-    
 }
 
 footer ul {
@@ -121,8 +117,7 @@ footer ul {
 
 footer ul li {
     display: inline;
-    margin-right: 10px;
-    padding: 30px;
+    margin-right: 20px;
 }
 
 footer ul li a {
@@ -140,4 +135,66 @@ footer ul li p {
 
 #employee-info {
     margin-top: 20px;
+}
+/* Accounting table styles */
+.table-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px; /* Add padding around the table */
+    border: 3px solid #5DEBD7; /* Increase border size */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+#accountingTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#accountingTable caption {
+    caption-side: top;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #074173;
+    color: #fff;
+}
+
+
+#accountingTable thead th {
+    border-bottom: 2px solid #5DEBD7;
+    background-color:  #C5FF95;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#accountingTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#accountingTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+#accountingTable td, #accountingTable th {
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#accountingTable td:last-child, #accountingTable th:last-child {
+    border-right: none;
+}
+
+#accountingTable tfoot {
+    background-color: #5DEBD7;
+    color: #000000;
+}
+
+#accountingTable tfoot td {
+    padding: 10px;
+    font-weight: bold;
+    border-top: 2px solid #fff;
 }
